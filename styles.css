@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;400;600;700&display=swap');
+
+main {
+    background-color: #131518;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    height: 416px;
+    width: 412px;
+    border-radius: 30px;
+    background-image: linear-gradient(to bottom, #232A34, #181E27);
+}
+
+.form__iconWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 2rem;
+    /* align-items: center; */
+}
+
+.form__title {
+    font-family: 'Overpass';
+    font-size: 28px; /* change to rem */
+    font-weight: bold;
+    color: #FFFFFF;
+    padding-left: 2rem;
+}
+
+.form__subtitle {
+    color: #969FAD;
+    font-family: 'Overpass';
+    font-size: 15px;
+    max-width: 340px;
+    padding-left: 2rem;
+}
+
+.form__ratingWrapper {
+    display: flex;
+    flex-direction: row;
+    margin: auto 0.5rem;
+    margin-left: 1.1rem;
+    justify-content: space-evenly;
+    max-width: 370px;
+}
+
+input[type="radio"] {
+    visibility: hidden;
+    height: 0;
+    width: 0;
+}
+
+.transition{
+    transition: all .3s ease-out;
+  }
+
+label {
+    display: table-cell;
+    color: white;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: #262E38;
+    padding-left: 1.5rem;
+    padding-right: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    justify-content: center;
+    align-items: center;
+    .transition;
+}
+
+input[type="radio"]:checked + label {
+    background-color: red;
+}
+
+.form__btnWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem auto;
+    height: 45px;
+    width: 341px;
+    border-radius: 22.5px;
+    background-color: #FC7614;
+}
+.form__btn {
+    font-family: 'Overpass';
+    font-size: 15px;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    margin: 0 auto;
+    letter-spacing: 2px;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    outline: none;
+    border: none;
+}
+
+
