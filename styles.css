@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;400;600;700&display=swap');
 
+body {
+    padding: 0;
+    margin: 0;
+}
 main {
     background-color: #131518;
     display: flex;
@@ -22,12 +26,17 @@ main {
     flex-direction: row;
     justify-content: flex-start;
     padding: 2rem;
-    /* align-items: center; */
+}
+
+.form__icon {
+     border-radius: 50%;
+    background-color: #262E38;
+    padding: 0.5rem;
 }
 
 .form__title {
     font-family: 'Overpass';
-    font-size: 28px; /* change to rem */
+    font-size: 1.75rem; /* change to rem */
     font-weight: bold;
     color: #FFFFFF;
     padding-left: 2rem;
@@ -36,7 +45,7 @@ main {
 .form__subtitle {
     color: #969FAD;
     font-family: 'Overpass';
-    font-size: 15px;
+    font-size: 0.9375rem;
     max-width: 340px;
     padding-left: 2rem;
 }
@@ -47,7 +56,7 @@ main {
     margin: auto 0.5rem;
     margin-left: 1.1rem;
     justify-content: space-evenly;
-    max-width: 370px;
+    max-width: 350px;
 }
 
 input[type="radio"] {
@@ -67,17 +76,19 @@ label {
     border-radius: 50%;
     background-color: #262E38;
     padding-left: 1.5rem;
-    padding-right: 1rem;
+    padding-right: 1.5rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
     justify-content: center;
     align-items: center;
-    .transition;
+    transition: all .3s ease-in-out;
 }
 
-input[type="radio"]:checked + label {
-    background-color: red;
+label:hover {
+    background-color: #FC7614;
+    cursor: pointer;
 }
+
 
 .form__btnWrapper {
     display: flex;
@@ -88,10 +99,11 @@ input[type="radio"]:checked + label {
     width: 341px;
     border-radius: 22.5px;
     background-color: #FC7614;
+    transition: all .3s ease-in-out;
 }
 .form__btn {
     font-family: 'Overpass';
-    font-size: 15px;
+    font-size: 0.9375rem;
     text-transform: uppercase;
     color: white;
     font-weight: bold;
@@ -102,6 +114,16 @@ input[type="radio"]:checked + label {
     background: none;
     outline: none;
     border: none;
+    transition: all .3s ease-in-out;
 }
 
 
+.form__btnWrapper:hover, .form__btn:hover {
+    background-color: white;
+    color: #FC7614;
+    cursor: pointer;
+}
+
+input[type="radio"]:checked + label {
+    background-color: #7C8798;
+}
